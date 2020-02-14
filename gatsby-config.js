@@ -5,7 +5,16 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/content/blog`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
