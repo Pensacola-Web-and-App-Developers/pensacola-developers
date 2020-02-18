@@ -16,7 +16,7 @@ const BlogPage = ({ data }) => (
     </section>
 
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
-      <h2 className="uppercase tracking-wider font-semibold text-light-blue-vivid-500 text-xl">
+      <h2 className="uppercase tracking-wider font-semibold text-center text-light-blue-vivid-500 text-xl">
         Articles are coming soon!
         {/* {data.allMarkdownRemark.totalCount} Posts */}
       </h2>
