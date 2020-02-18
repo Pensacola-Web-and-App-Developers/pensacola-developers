@@ -19,7 +19,7 @@ const EventCard = ({
         <div className="font-thin text-cool-grey-200">{location}</div>
       </div>
       <img
-        className="sm:w-40 rounded"
+        className="sm:h-24 rounded"
         src={photo}
         alt="Odd Colony Brewing Company"
       />

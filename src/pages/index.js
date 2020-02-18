@@ -16,8 +16,8 @@ const IndexPage = () => (
       <div className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
         <h1 className="font-bold text-2xl sm:text-4xl mt-10">Welcome</h1>
         <p className="text-center sm:text-xl py-10">
-          Pensacola Developers is an organization for web designers and
-          developers looking to network with others in the industry, learn about
+          Pensacola Developers is an organization for web developers and web
+          designers looking to network with others in the industry, learn about
           new or emerging technologies, and for anyone wanting to learn web
           development.
         </p>
@@ -36,10 +36,9 @@ const IndexPage = () => (
           Connect
         </h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non illo,
-          ullam voluptatibus maxime, eligendi vel odio culpa nihil corporis in
-          repudiandae autem quos a assumenda ipsam voluptas similique deserunt
-          at?
+          Programmers get the stigma they aren’t social, we beg to differ.
+          Pensacola Developers are about connecting individuals in the local
+          tech community.
         </p>
       </div>
 
@@ -48,10 +47,8 @@ const IndexPage = () => (
           Educate
         </h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
-          eaque inventore voluptates, similique ratione dolores sed consectetur,
-          error fugit consequuntur deleniti illo architecto cumque harum nam
-          explicabo. Odit, recusandae? Excepturi.
+          Pensacola Developers provides opportunities to learn web technologies
+          and have a little fun while doing it.
         </p>
       </div>
 
@@ -60,10 +57,9 @@ const IndexPage = () => (
           Support
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo deleniti
-          accusamus asperiores et harum delectus possimus omnis dignissimos?
-          Quos repudiandae porro, adipisci voluptates quisquam aliquam voluptas
-          quaerat ipsam quasi dolores?
+          We want to help cultivate a local environment that supports and
+          encourages those learning and continuing to learn web development
+          technologies.
         </p>
       </div>
     </section>
@@ -72,9 +68,8 @@ const IndexPage = () => (
       <div className="bg-cool-grey-900 max-w-sm rounded px-5 py-5 m-2">
         <h3 className="font-bold text-xl">Events</h3>
         <p>
-          We have events (sometimes). Isn't that the point of having a group.
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dolorem,
-          assumenda nemo deserunt in nihil.
+          Getting together is what we are about. So check out some events while
+          you are here.
         </p>
         <div className="flex flex-col sm:flex-row items-start mt-4">
           <Link
@@ -89,9 +84,8 @@ const IndexPage = () => (
       <div className="bg-cool-grey-900 max-w-sm rounded px-5 py-5 m-2">
         <h3 className="font-bold text-xl">Blog</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus,
-          deleniti accusantium odio commodi distinctio repellendus sunt sed
-          consequuntur amet officia?
+          Want to learn about local events, current members, or some other nerdy
+          stuff?
         </p>
         <div className="flex flex-col sm:flex-row items-start mt-4">
           <Link
@@ -106,9 +100,8 @@ const IndexPage = () => (
       <div className="bg-cool-grey-900 max-w-sm rounded px-5 py-5 m-2">
         <h3 className="font-bold text-xl">Resources</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus,
-          deleniti accusantium odio commodi distinctio repellendus sunt sed
-          consequuntur amet officia?
+          Here’s a collection of resources that novice and veteran web
+          developers might find handy.
         </p>
         <div className="flex flex-col sm:flex-row items-start mt-4">
           <Link

@@ -17,10 +17,11 @@ const BlogPage = ({ data }) => (
 
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
       <h2 className="uppercase tracking-wider font-semibold text-light-blue-vivid-500 text-xl">
-        {data.allMarkdownRemark.totalCount} Posts
+        Articles are coming soon!
+        {/* {data.allMarkdownRemark.totalCount} Posts */}
       </h2>
 
-      {data.allMarkdownRemark.edges.map(({ node }) => (
+      {/* {data.allMarkdownRemark.edges.map(({ node }) => (
         <div
           className="bg-cool-grey-900 max-w-2xl rounded p-8 mt-10"
           key={node.id}
@@ -42,7 +43,7 @@ const BlogPage = ({ data }) => (
             <p className="mt-5">{node.excerpt}</p>
           </div>
         </div>
-      ))}
+      ))} */}
     </section>
   </Layout>
 )
