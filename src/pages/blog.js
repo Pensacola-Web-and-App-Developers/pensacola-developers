@@ -16,36 +16,31 @@ const BlogPage = ({ data }) => (
     </section>
 
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
-      <div className="bg-cool-grey-900 max-w-2xl rounded p-8">
-        <div className="flex justify-between">
-          <div>
-            <div className="font-semibold text-light-blue-vivid-500 text-lg">
-              Blog.date
-            </div>
-            <h2 className="font-semibold text-xl py-2">Blog.title</h2>
-          
-          </div>
-          <div className="bg-pink-vivid-300 rounded px-10">Blog.photo</div>
-        </div>
-        <div>
-          <p className="mt-5">
-            Blog.description Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Consectetur magnam maiores voluptatibus eum quo
-            cupiditate in reiciendis ipsa voluptas quisquam.
-          </p>
-        </div>
-      </div>
-    </section>
+      <h2 className="uppercase tracking-wider font-semibold text-light-blue-vivid-500 text-xl">
+        {data.allMarkdownRemark.totalCount} Posts
+      </h2>
 
-    <section>
-      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
-          <Link to={node.fields.slug}>
-            <h3>
-              {node.frontmatter.title} <span> - {node.frontmatter.date}</span>
-            </h3>
-          </Link>
+        <div
+          className="bg-cool-grey-900 max-w-2xl rounded p-8 mt-10"
+          key={node.id}
+        >
+          <div className="flex justify-between">
+            <div>
+              <div className="font-semibold text-light-blue-vivid-500 text-lg">
+                {node.frontmatter.date}
+              </div>
+              <Link to={node.fields.slug}>
+                <h3 className="font-semibold text-xl py-2">
+                  {node.frontmatter.title}
+                </h3>
+              </Link>
+            </div>
+            <div className="bg-pink-vivid-300 rounded w-32"></div>
+          </div>
+          <div>
+            <p className="mt-5">{node.excerpt}</p>
+          </div>
         </div>
       ))}
     </section>
@@ -68,6 +63,7 @@ export const query = graphql`
           fields {
             slug
           }
+          excerpt
         }
       }
     }

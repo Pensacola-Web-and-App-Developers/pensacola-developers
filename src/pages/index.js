@@ -32,7 +32,9 @@ const IndexPage = () => (
 
     <section className="flex flex-col sm:flex-row justify-center items-stretch border-t border-b border-cool-grey-900 mx-auto sm:px-10 py-16">
       <div className="border-r border-cool-grey-900 px-8">
-        <h2 className="font-semibold text-xl">Connect</h2>
+        <h2 className="uppercase tracking-wider font-semibold text-light-blue-vivid-500 text-xl">
+          Connect
+        </h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non illo,
           ullam voluptatibus maxime, eligendi vel odio culpa nihil corporis in
@@ -42,7 +44,9 @@ const IndexPage = () => (
       </div>
 
       <div className="border-r border-cool-grey-900 mt-10 sm:mt-0 px-8">
-        <h2 className="font-semibold text-xl">Educate</h2>
+        <h2 className="uppercase tracking-wider font-semibold text-light-blue-vivid-500 text-xl">
+          Educate
+        </h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
           eaque inventore voluptates, similique ratione dolores sed consectetur,
@@ -52,7 +56,9 @@ const IndexPage = () => (
       </div>
 
       <div className="mt-10 sm:mt-0 px-8">
-        <h2 className="font-semibold text-xl">Support</h2>
+        <h2 className="uppercase tracking-wider font-semibold text-light-blue-vivid-500 text-xl">
+          Support
+        </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo deleniti
           accusamus asperiores et harum delectus possimus omnis dignissimos?
@@ -77,7 +83,6 @@ const IndexPage = () => (
           >
             Browse Events
           </Link>
-          
         </div>
       </div>
 
@@ -107,7 +112,7 @@ const IndexPage = () => (
         </p>
         <div className="flex flex-col sm:flex-row items-start mt-4">
           <Link
-            to="/blog"
+            to="/resources"
             className="font-semibold bg-light-blue-vivid-500 hover:bg-light-blue-vivid-700 rounded px-4 py-2"
           >
             Browse Resources
