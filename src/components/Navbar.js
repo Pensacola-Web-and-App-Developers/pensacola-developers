@@ -70,6 +70,12 @@ const Navbar = ({ siteTitle }) => {
             About
           </Link>
           <Link
+            to="/resources"
+            className="mt-1 px-2 py-1 sm:py-0 hover:text-cool-grey-100 focus:outline-none sm:mt-0 sm:ml-2"
+          >
+            Resources
+          </Link>
+          <Link
             to="/contact"
             className="mt-1  px-2 py-1 sm:py-0 hover:text-cool-grey-100 focus:outline-none sm:mt-0 sm:ml-2"
           >
