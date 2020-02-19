@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Pensacola Developers`,
     description: `Pensacola Developers is Pensacola's coolest meetup group.`,
-    author: `@gatsbyjs`,
+    author: `@gilliland_andy`,
   },
   plugins: [
     `gatsby-transformer-remark`,

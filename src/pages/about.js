@@ -13,7 +13,11 @@ const SecondPage = () => (
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
       <h1 className="font-bold text-2xl sm:text-4xl mt-10">About Us</h1>
       <p className="text-center max-w-3xl leading-loose sm:text-xl py-10">
-      Pensacola Developers was created to help connect like minded individuals in the community. We know that web development is ever changing, we also want to create local education opportunities. Vetern or novice developers are encouraged to participate, everyone has something to bring to the table. Let's meet some of the people.
+        Pensacola Developers was created to help connect like minded individuals
+        in the community. We know that web development is ever changing, we also
+        want to create local education opportunities. Vetern or novice
+        developers are encouraged to participate, everyone has something to
+        bring to the table. Let's meet some of the people.
       </p>
     </section>
 
@@ -62,10 +66,37 @@ const SecondPage = () => (
         </div>
         <div>
           <p className="mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-            tempora similique, tempore reprehenderit et, esse, doloribus
-            aspernatur saepe praesentium qui nemo corrupti reiciendis illum
-            natus beatae laborum distinctio aliquam eius.
+            This guy likes to talk web development, web design, and business in
+            the tech industry. Currently, he’s mostly working with{" "}
+            <a
+              className="text-blue-500 hover:text-blue-700"
+              href="https://reactjs.org/"
+            >
+              React
+            </a>{" "}
+            and building websites with{" "}
+            <a
+              className="text-blue-500 hover:text-blue-700"
+              href="https://www.gatsbyjs.org/"
+            >
+              Gatsby
+            </a>
+            . He also likes to dabble with{" "}
+            <a
+              className="text-blue-500 hover:text-blue-700"
+              href="https://nodejs.org/en/"
+            >
+              Node.js
+            </a>{" "}
+            and{" "}
+            <a
+              className="text-blue-500 hover:text-blue-700"
+              href="https://www.mongodb.com/"
+            >
+              MongoDB
+            </a>{" "}
+            on some side projects. When he’s not programming, he likes to get
+            his fitness on and crank some <a className="text-blue-500 hover:text-blue-700" href="https://www.hallandoates.com/">Hall & Oates</a>.
           </p>
         </div>
       </div>
