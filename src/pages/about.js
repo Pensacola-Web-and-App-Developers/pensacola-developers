@@ -51,7 +51,7 @@ const SecondPage = () => (
             >
               Python
             </a>{" "}
-            as the his first language he loved! Fast forward years later and
+            as the first language he loved! Fast forward years later and
             he's now a Software Architect for a transportation company working
             on{" "}
             <a
