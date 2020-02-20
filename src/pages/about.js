@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -42,10 +41,41 @@ const SecondPage = () => (
         </div>
         <div>
           <p className="mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-            tempora similique, tempore reprehenderit et, esse, doloribus
-            aspernatur saepe praesentium qui nemo corrupti reiciendis illum
-            natus beatae laborum distinctio aliquam eius.
+            Coming from an extremely rural area in Mississippi, he wasn't
+            introduced to software development until after high school. When he
+            moved to the sunshine state he burned through as many online
+            tutorials as possible picking up{" "}
+            <a
+              className="text-blue-500 hover:text-blue-700"
+              href="https://www.python.org/"
+            >
+              Python
+            </a>{" "}
+            as the his first language he loved! Fast forward years later and
+            he's now a Software Architect for a transportation company working
+            on{" "}
+            <a
+              className="text-blue-500 hover:text-blue-700"
+              href="https://aws.amazon.com/"
+            >
+              AWS
+            </a>{" "}
+            certifications and creating enterprise applications in{" "}
+            <a
+              className="text-blue-500 hover:text-blue-700"
+              href="https://angular.io/"
+            >
+              Angular
+            </a>
+            . When he's not nerding out he's usually hiking, biking, fishing or
+            watching the{" "}
+            <a
+              className="text-blue-500 hover:text-blue-700"
+              href="https://www.disneyplus.com/"
+            >
+              Disney
+            </a>{" "}
+            channel with his daughter.
           </p>
         </div>
       </div>
@@ -66,8 +96,16 @@ const SecondPage = () => (
         </div>
         <div>
           <p className="mt-5">
-            This guy likes to talk web development, web design, and business in
-            the tech industry. Currently, he’s mostly working with{" "}
+            Hailing from small town Illinois, his first experience on the
+            computer was ripping music off of{" "}
+            <a
+              className="text-blue-500 hover:text-blue-700"
+              href="https://us.napster.com/"
+            >
+              Napster
+            </a>
+            . This guy likes to talk web development, web design, and business
+            in the tech industry. Currently, he’s mostly working with{" "}
             <a
               className="text-blue-500 hover:text-blue-700"
               href="https://reactjs.org/"
@@ -96,7 +134,14 @@ const SecondPage = () => (
               MongoDB
             </a>{" "}
             on some side projects. When he’s not programming, he likes to get
-            his fitness on and crank some <a className="text-blue-500 hover:text-blue-700" href="https://www.hallandoates.com/">Hall & Oates</a>.
+            his fitness on and crank some{" "}
+            <a
+              className="text-blue-500 hover:text-blue-700"
+              href="https://www.hallandoates.com/"
+            >
+              Hall & Oates
+            </a>
+            .
           </p>
         </div>
       </div>
