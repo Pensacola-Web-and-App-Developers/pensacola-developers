@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,7 +8,7 @@ import EventCard from "../components/EventCard"
 import oddColony from "../images/odd-colony-1.jpg"
 import firstAngularSite from "../images/my-first-angular-site.jpeg"
 
-const EventsPage = () => (
+const EventsPage = ({ data }) => (
   <Layout>
     <SEO title="Events" />
 
@@ -40,7 +40,44 @@ const EventsPage = () => (
         description="Come hang out and talk shop! Veteran and newbie coders feel free to come talk projects, share resources, and cut loose!"
       />
     </section>
+
+    {/* <section className="text-cool-grey-050 mx-auto">
+      {data.allMeetupEvent.edges.map(({ node }) => (
+        <div
+          className="bg-cool-grey-900 max-w-2xl rounded px-10 py-12 mt-5"
+          key={node.id}
+        >
+          <div>
+            <div>
+              {node.local_date} @ {node.local_time}
+            </div>
+            <h3>{node.name}</h3>
+            <div>{node.venue.name}</div>
+          </div>
+          <div dangerouslySetInnerHTML={{ __html: node.description }} />
+        </div>
+      ))}
+    </section> */}
   </Layout>
 )
 
 export default EventsPage
+
+export const query = graphql`
+  query {
+    allMeetupEvent {
+      edges {
+        node {
+          id
+          name
+          local_date
+          local_time
+          description
+          venue {
+            name
+          }
+        }
+      }
+    }
+  }
+`
