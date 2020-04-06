@@ -7,6 +7,7 @@ import EventCard from "../components/EventCard"
 
 import oddColony from "../images/odd-colony-1.jpg"
 import firstAngularSite from "../images/my-first-angular-site.jpeg"
+import introToReact from "../images/events/Intro To React/intro-to-react.png"
 
 const EventsPage = ({ data }) => (
   <Layout>
@@ -17,9 +18,59 @@ const EventsPage = ({ data }) => (
       <p className="text-center sm:text-xl py-10">
         Come see what's going on with Pensacola Developers!
       </p>
+
+      <div className="bg-cool-grey-900 border-2 border-pink-vivid-500 max-w-lg p-8 rounded">
+        If you are new to joining any of Pensacola Developer's workshops, check
+        out our{" "}
+        <Link
+          className="text-pink-vivid-500 font-semibold hover:text-pink-vivid-400"
+          to="/workshop-setup"
+        >
+          Workshop Setup
+        </Link>{" "}
+        so you have everything ready when you join in.
+      </div>
     </section>
 
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
+      <div className="bg-cool-grey-900 max-w-2xl rounded p-8 mt-8">
+        <div className="flex flex-col-reverse sm:flex-row justify-between">
+          <div>
+            <div className="uppercase font-semibold text-light-blue-vivid-500 text-lg pt-4 sm:pt-0">
+              Thu, Apr 9 @ 6:00 PM
+            </div>
+            <h2 className="font-semibold text-xl py-2">Intro To React</h2>
+            <a
+              className="font-semibold text-pink-vivid-500 hover:text-pink-vivid-400"
+              href="https://www.twitch.tv/pensacoladevs"
+            >
+              twitch.tv/pensacoladevs/
+            </a>
+          </div>
+          <img
+            className="sm:h-24 rounded"
+            src={introToReact}
+            alt="Intro To React"
+          />
+        </div>
+        <div>
+          <p className="mt-5">
+            Get your feet wet with React, a JavaScript library for building user
+            interfaces. In this free workshop put on by Pensacola Developers, we
+            will build an app to help you understand the fundamentals of React.
+            The workshop will be streamed live on the Pensacola Developer's
+            Twitch Channel at{" "}
+            <a
+              className="font-semibold text-pink-vivid-500 hover:text-pink-vivid-400"
+              href="https://www.twitch.tv/pensacoladevs"
+            >
+              twitch.tv/pensacoladevs/
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+
       <EventCard
         day="Tue"
         date="Mar 10"
