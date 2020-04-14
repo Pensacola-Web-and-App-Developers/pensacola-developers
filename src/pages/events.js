@@ -7,7 +7,8 @@ import EventCard from "../components/EventCard"
 
 import oddColony from "../images/odd-colony-1.jpg"
 import firstAngularSite from "../images/my-first-angular-site.jpeg"
-import introToReact from "../images/events/Intro To React/intro-to-react.png"
+import introToReact from "../images/events/intro-to-react.png"
+import virtualHappyHour from "../images/events/virtual-happy-hour.png"
 
 const EventsPage = ({ data }) => (
   <Layout>
@@ -33,6 +34,43 @@ const EventsPage = ({ data }) => (
     </section>
 
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
+      <div className="bg-cool-grey-900 max-w-2xl rounded p-8 mt-8">
+        <div className="flex flex-col-reverse sm:flex-row justify-between">
+          <div>
+            <div className="uppercase font-semibold text-light-blue-vivid-500 text-lg pt-4 sm:pt-0">
+              Fri, Apr 17 @ 6:00 PM
+            </div>
+            <h2 className="font-semibold text-xl py-2">
+              Virtual Social Happy Hour
+            </h2>
+            <a
+              className="font-semibold text-pink-vivid-500 hover:text-pink-vivid-400"
+              href="https://us04web.zoom.us/j/71609321461?pwd=NGZXV0NISldVcHJWQ05HV3MyaTJYdz09"
+            >
+              Zoom
+            </a>
+          </div>
+          <img
+            className="sm:h-24 rounded"
+            src={virtualHappyHour}
+            alt="Virtual Social Happy Hour"
+          />
+        </div>
+        <div>
+          <p className="mt-5">
+            Pensacola Developers is inviting you to a Virtual Social Happy Hour
+            on Zoom! Feel free to jump in!
+            <br />
+            <br />
+            <div className="text-pink-vivid-500">
+              Meeting ID: 716 0932 1461
+              <br />
+              Password: 023880
+            </div>
+          </p>
+        </div>
+      </div>
+
       <div className="bg-cool-grey-900 max-w-2xl rounded p-8 mt-8">
         <div className="flex flex-col-reverse sm:flex-row justify-between">
           <div>
