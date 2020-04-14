@@ -58,7 +58,7 @@ const EventsPage = ({ data }) => (
         </div>
         <div>
           <p className="mt-5">
-            Pensacola Developers is inviting you to a Virtual Social Happy Hour
+            Pensacola Developers are inviting you to a Virtual Social Happy Hour
             on Zoom! Feel free to jump in!
             <br />
             <br />
