@@ -27,8 +27,8 @@ const Navbar = ({ siteTitle }) => {
   `)
 
   return (
-    <nav className="bg-white text-cool-grey-050 border-b border-cool-grey-900 px-4 sm:px-10 py-4">
-      <div className="sm:flex sm:justify-between sm:items-center lg:max-w-4xl mx-auto">
+    <nav className="bg-white text-cool-grey-050 border-b border-cool-grey-900 px-4 sm:px-5 py-4">
+      <div className="sm:flex sm:justify-between sm:items-center lg:max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           <Link to="/" className="navbar-logo-link">
             <Img className="navbar-logo" fixed={data.file.childImageSharp.fixed} />
