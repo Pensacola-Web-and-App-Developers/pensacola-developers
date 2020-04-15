@@ -54,7 +54,7 @@ export default class ContactForm extends React.Component {
         <div className="field">
           <div className="flex">
             <input
-              className="bg-cool-grey-100 active:bg-cool-grey-100 font-semibold text-cool-grey-500 w-full px-3 py-2 placeholder-cool-grey-500 rounded focus:bg-black outline-none focus:shadow-outline mt-2 mr-1"
+              className="bg-cool-grey-100 active:bg-cool-grey-100 font-semibold text-cool-grey-500 w-full px-3 py-2 placeholder-cool-grey-500 rounded focus:bg-white outline-none focus:shadow-outline mt-2 mr-1"
               type={"text"}
               name={"firstName"}
               onChange={this.handleChange}
@@ -63,7 +63,7 @@ export default class ContactForm extends React.Component {
               placeholder="First Name"
             />
             <input
-              className="bg-cool-grey-100 active:bg-cool-grey-100 font-semibold text-cool-grey-500 w-full px-3 py-2 placeholder-cool-grey-500 rounded focus:bg-black outline-none focus:shadow-outline mt-2 ml-1"
+              className="bg-cool-grey-100 active:bg-cool-grey-100 font-semibold text-cool-grey-500 w-full px-3 py-2 placeholder-cool-grey-500 rounded focus:bg-white outline-none focus:shadow-outline mt-2 ml-1"
               type={"text"}
               name={"lastName"}
               onChange={this.handleChange}
@@ -76,7 +76,7 @@ export default class ContactForm extends React.Component {
         <div className="field mt-6">
           <div className="control">
             <input
-              className="bg-cool-grey-100 active:bg-cool-grey-100 font-semibold text-cool-grey-500 w-full px-3 py-2 placeholder-cool-grey-500 rounded focus:bg-black outline-none focus:shadow-outline mt-2"
+              className="bg-cool-grey-100 active:bg-cool-grey-100 font-semibold text-cool-grey-500 w-full px-3 py-2 placeholder-cool-grey-500 rounded focus:bg-white outline-none focus:shadow-outline mt-2"
               type={"email"}
               name={"email"}
               onChange={this.handleChange}
@@ -90,7 +90,7 @@ export default class ContactForm extends React.Component {
         <div className="field mt-6">
           <div className="control">
             <textarea
-              className="bg-cool-grey-100 active:bg-cool-grey-100 font-semibold text-cool-grey-500 w-full px-3 py-2 placeholder-cool-grey-500 rounded focus:bg-black outline-none focus:shadow-outline mt-2"
+              className="bg-cool-grey-100 active:bg-cool-grey-100 font-semibold text-cool-grey-500 w-full px-3 py-2 placeholder-cool-grey-500 rounded focus:bg-white outline-none focus:shadow-outline mt-2"
               name={"message"}
               onChange={this.handleChange}
               id={"message"}
