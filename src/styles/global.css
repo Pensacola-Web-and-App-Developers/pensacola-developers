@@ -1,0 +1,27 @@
+.bg-center.bg-cover{
+    display: block;
+    position: relative;
+    background: rgba(43,176,237, 0.6);
+  }
+
+.bg-center.bg-cover::before{
+    content: "";
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+
+.navbar-logo {
+    width: 140px;
+    height: 30px;
+}
+
+.navbar-logo-link{
+    line-height: 0;
+}

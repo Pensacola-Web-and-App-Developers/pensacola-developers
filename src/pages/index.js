@@ -4,33 +4,30 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import patternRandomized from "../images/pattern-randomized.svg"
+import meetup from "../images/background.jpg"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section
-      className="bg-center bg-cover"
-      style={{ backgroundImage: `url(${patternRandomized})` }}
-    >
-      <div className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
-        <h1 className="font-bold text-2xl sm:text-4xl mt-10">Welcome</h1>
-        <p className="text-center sm:text-xl py-10">
-          Pensacola Developers is an organization for web developers and web
-          designers looking to network with others in the industry, learn about
-          new or emerging technologies, and for anyone wanting to learn web
-          development.
+      className="bg-center bg-cover">
+      <div className="text-white flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
+        <h1 className="font-bold text-2xl sm:text-5xl">Welcome</h1>
+        <p className="font-bold text-center sm:text-2xl py-10">
+          Pensacola Developers is an inclusive organization for web developers and web
+          designers looking to network with others in the industry, for those wanting to learn about
+          new technologies and for anyone wanting to learn web
+          development
         </p>
         <Link
           to="/about"
-          className="font-semibold bg-light-blue-vivid-500 hover:bg-light-blue-vivid-700 rounded px-4 py-2"
-        >
+          className="font-semibold bg-light-blue-vivid-500 hover:bg-light-blue-vivid-700 rounded px-4 py-2">
           Learn More
         </Link>
       </div>
     </section>
 
-    <section className="flex flex-col sm:flex-row justify-center items-stretch border-t border-b border-cool-grey-900 mx-auto sm:px-10 py-16">
+    <section className="flex flex-col sm:flex-row justify-center items-stretch mx-auto sm:px-10 py-16">
       <div className="border-r border-cool-grey-900 px-8">
         <h2 className="uppercase tracking-wider font-semibold text-light-blue-vivid-500 text-xl">
           Connect
@@ -64,7 +61,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="flex flex-wrap justify-center items-center lg:max-w-screen-xl px-4 py-5 mx-auto mt-10">
+    {/* <section className="flex flex-wrap justify-center items-center lg:max-w-screen-xl px-4 py-5 mx-auto mt-10">
       <div className="bg-cool-grey-900 max-w-sm rounded px-5 py-5 m-2">
         <h3 className="font-bold text-xl">Events</h3>
         <p>
@@ -112,7 +109,7 @@ const IndexPage = () => (
           </Link>
         </div>
       </div>
-    </section>
+    </section> */}
   </Layout>
 )
 
