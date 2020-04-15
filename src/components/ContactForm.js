@@ -102,7 +102,7 @@ export default class ContactForm extends React.Component {
         </div>
         <div className="field flex justify-center items-center">
           <button
-            className="font-semibold bg-light-blue-vivid-500 hover:bg-light-blue-vivid-700 rounded px-4 py-2 mt-5"
+            className="text-white font-semibold bg-light-blue-vivid-500 hover:bg-light-blue-vivid-700 rounded px-4 py-2 mt-5"
             type="submit"
           >
             Spam Us
