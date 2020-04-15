@@ -15,7 +15,7 @@ const IndexPage = () => (
         <h1 className="font-bold text-2xl sm:text-5xl">Welcome</h1>
         <p className="font-bold text-center sm:text-2xl py-10">
           Pensacola Developers is an inclusive organization for web developers and web
-          designers looking to network with others in the industry, for those wanting tp learn about
+          designers looking to network with others in the industry, for those wanting to learn about
           new technologies and for anyone wanting to learn web
           development
         </p>
