@@ -16,7 +16,7 @@ const Navbar = ({ siteTitle }) => {
 
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: {eq: "pdfull.png"}) {
+      file(relativePath: { eq: "pdfull.png" }) {
         childImageSharp {
           fixed {
             src
@@ -27,11 +27,14 @@ const Navbar = ({ siteTitle }) => {
   `)
 
   return (
-    <nav className="bg-white text-cool-grey-050 border-b border-cool-grey-900 px-4 sm:px-5 py-4">
+    <nav className="bg-white px-4 sm:px-5 py-4">
       <div className="sm:flex sm:justify-between sm:items-center lg:max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           <Link to="/" className="navbar-logo-link">
-            <Img className="navbar-logo" fixed={data.file.childImageSharp.fixed} />
+            <Img
+              className="navbar-logo"
+              fixed={data.file.childImageSharp.fixed}
+            />
           </Link>
           <div className="sm:hidden">
             <button
@@ -57,43 +60,37 @@ const Navbar = ({ siteTitle }) => {
           </div>
         </div>
         <div
-          className={`text-cool-grey-500 px-2 pt-2 pb-4 sm:py-0 sm:flex  ${
+          className={`text-cool-grey-700 font-semibold px-2 pt-2 pb-4 sm:py-0 sm:flex  ${
             isOpen ? "flex flex-col" : "hidden"
           }`}
         >
           <Link
-            to="/"
-            className="mt-1 px-2 py-1 sm:py-0 hover:text-cool-grey-100 focus:outline-none sm:mt-0 sm:ml-2"
-          >
-            Home
-          </Link>
-          <Link
             to="/events"
-            className="mt-1 px-2 py-1 sm:py-0 hover:text-cool-grey-100 focus:outline-none sm:mt-0 sm:ml-2"
+            className="mt-1 sm:mt-0 sm:ml-2 px-3 py-1 sm:py-2 hover:bg-cool-grey-100 focus:bg-cool-grey-100 focus:outline-none rounded-md"
           >
             Events
           </Link>
           <Link
             to="/blog"
-            className="mt-1 px-2 py-1 sm:py-0 hover:text-cool-grey-100 focus:outline-none sm:mt-0 sm:ml-2"
+            className="mt-1 sm:mt-0 sm:ml-2 px-3 py-1 sm:py-2 hover:bg-cool-grey-100 focus:bg-cool-grey-100 focus:outline-none rounded-md"
           >
             Blog
           </Link>
           <Link
             to="/about"
-            className="mt-1 px-2 py-1 sm:py-0 hover:text-cool-grey-100 focus:outline-none sm:mt-0 sm:ml-2"
+            className="mt-1 sm:mt-0 sm:ml-2 px-3 py-1 sm:py-2 hover:bg-cool-grey-100 focus:bg-cool-grey-100 focus:outline-none rounded-md"
           >
             About
           </Link>
           <Link
             to="/resources"
-            className="mt-1 px-2 py-1 sm:py-0 hover:text-cool-grey-100 focus:outline-none sm:mt-0 sm:ml-2"
+            className="mt-1 sm:mt-0 sm:ml-2 px-3 py-1 sm:py-2 hover:bg-cool-grey-100 focus:bg-cool-grey-100 focus:outline-none rounded-md"
           >
             Resources
           </Link>
           <Link
             to="/contact"
-            className="mt-1  px-2 py-1 sm:py-0 hover:text-cool-grey-100 focus:outline-none sm:mt-0 sm:ml-2"
+            className="mt-1 sm:mt-0 sm:ml-2 px-3 py-1 sm:py-2 hover:bg-cool-grey-100 focus:bg-cool-grey-100 focus:outline-none rounded-md"
           >
             Contact
           </Link>
@@ -108,7 +105,7 @@ Navbar.propTypes = {
 }
 
 Navbar.defaultProps = {
-  siteTitle: ``
+  siteTitle: ``,
 }
 
 export default Navbar

@@ -20,11 +20,11 @@ const EventsPage = ({ data }) => (
         Come see what's going on with Pensacola Developers!
       </p>
 
-      <div className="bg-cool-grey-900 border-2 border-pink-vivid-500 max-w-lg p-8 rounded">
+      <div className="bg-pink-vivid-050 border-2 border-pink-vivid-500 max-w-lg p-8 rounded">
         If you are new to joining any of Pensacola Developer's workshops, check
         out our{" "}
         <Link
-          className="text-pink-vivid-500 font-semibold hover:text-pink-vivid-400"
+          className="text-pink-vivid-500 font-semibold hover:text-pink-vivid-700 focus:text-pink-vivid-700 outline-none"
           to="/workshop-setup"
         >
           Workshop Setup
@@ -34,7 +34,7 @@ const EventsPage = ({ data }) => (
     </section>
 
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
-      <div className="bg-cool-grey-900 max-w-2xl rounded p-8 mt-8">
+      <div className="bg-cool-grey-050 max-w-2xl rounded shadow-md p-8 mt-8">
         <div className="flex flex-col-reverse sm:flex-row justify-between">
           <div>
             <div className="uppercase font-semibold text-light-blue-vivid-500 text-lg pt-4 sm:pt-0">
@@ -71,7 +71,7 @@ const EventsPage = ({ data }) => (
         </div>
       </div>
 
-      <div className="bg-cool-grey-900 max-w-2xl rounded p-8 mt-8">
+      <div className="bg-cool-grey-050 max-w-2xl rounded shadow-md p-8 mt-8">
         <div className="flex flex-col-reverse sm:flex-row justify-between">
           <div>
             <div className="uppercase font-semibold text-light-blue-vivid-500 text-lg pt-4 sm:pt-0">
@@ -133,7 +133,7 @@ const EventsPage = ({ data }) => (
     {/* <section className="text-cool-grey-050 mx-auto">
       {data.allMeetupEvent.edges.map(({ node }) => (
         <div
-          className="bg-cool-grey-900 max-w-2xl rounded px-10 py-12 mt-5"
+          className="bg-cool-grey-050 max-w-2xl rounded px-10 py-12 mt-5"
           key={node.id}
         >
           <div>

@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
     <>
       <div className="flex flex-col min-h-screen antialiased">
         <Navbar siteTitle={data.site.siteMetadata.title} />
-        <main className="bg-grey-200 text-black flex flex-col flex-1">
+        <main className="bg-grey-050 flex flex-col flex-1">
           {children}
         </main>
         <Footer siteTitle={data.site.siteMetadata.title} />
