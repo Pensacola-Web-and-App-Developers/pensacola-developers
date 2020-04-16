@@ -35,7 +35,7 @@ export default class ContactForm extends React.Component {
   render() {
     return (
       <form
-        className="bg-white border border-cool-grey-900 max-w-md rounded px-8 pt-6 pb-8"
+        className="bg-white border-2 border-cool-grey-200 max-w-md rounded px-8 pt-6 pb-8"
         name="contact"
         method="post"
         action="/contact/thanks/"

@@ -10,10 +10,8 @@ const IndexPage = () => (
     <section className="bg-center bg-cover">
       <div className="welcome-msg text-white flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
         <p className="font-bold text-center sm:text-3xl py-10">
-          Pensacola Developers is an inclusive organization for web developers
-          and web designers looking to network with others in the industry, for
-          those wanting to learn about new technologies and for anyone wanting
-          to learn web development
+          Pensacola Developers is an inclusive organization for web developers and web
+          designers looking to network, wanting to learn and who have a passion for innovation
         </p>
         <Link
           to="/about"
