@@ -2,4 +2,68 @@
 
 @tailwind components;
 
+.markdown {
+  @apply text-cool-grey-100 leading-relaxed;
+}
+
+.markdown p + p {
+  @apply mt-6;
+}
+
+.markdown * + * {
+  @apply mt-6;
+}
+
+.markdown li {
+  @apply mt-2;
+}
+
+.markdown li + li {
+  @apply mt-2;
+}
+
+.markdown strong {
+  @apply text-cool-grey-200 font-bold;
+}
+
+.markdown a {
+  @apply text-pink-vivid-500 font-semibold;
+}
+
+.markdown strong a {
+  @apply font-bold;
+}
+
+.markdown h1 {
+  @apply font-bold text-2xl;
+}
+
+.markdown h2 {
+  @apply uppercase tracking-wider font-semibold text-light-blue-vivid-500 text-xl mt-16;
+}
+
+.markdown h3 {
+  @apply font-bold text-xl;
+}
+
+.markdown code {
+  @apply font-mono text-sm inline text-light-blue-vivid-400 px-1;
+}
+
+.markdown pre code {
+  @apply block bg-cool-grey-050 p-4 rounded;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-light-blue-vivid-400 pl-4 italic;
+}
+
+.markdown ul {
+  @apply pl-5 list-disc;
+}
+
+.markdown ol {
+  @apply pl-5 list-decimal;
+}
+
 @tailwind utilities;

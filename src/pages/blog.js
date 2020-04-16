@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql} from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,8 +17,8 @@ const BlogPage = ({ data }) => (
 
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
       <h2 className="uppercase tracking-wider font-semibold text-center text-light-blue-vivid-500 text-xl">
-        Articles are coming soon!
         {/* {data.allMarkdownRemark.totalCount} Posts */}
+        Articles Are Coming Soon!
       </h2>
 
       {/* {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -37,7 +37,6 @@ const BlogPage = ({ data }) => (
                 </h3>
               </Link>
             </div>
-            <div className="bg-pink-vivid-300 rounded w-32"></div>
           </div>
           <div>
             <p className="mt-5">{node.excerpt}</p>
