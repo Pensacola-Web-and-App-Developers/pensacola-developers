@@ -45,7 +45,6 @@ export const query = graphql`
       html
       frontmatter {
         title
-        author
         date(formatString: "MMMM DD, YYYY")
       }
     }
