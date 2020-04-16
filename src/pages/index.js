@@ -14,9 +14,7 @@ const IndexPage = () => (
       <div className="welcome-msg text-white flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
         <p className="font-bold text-center sm:text-3xl py-10">
           Pensacola Developers is an inclusive organization for web developers and web
-          designers looking to network with others in the industry, for those wanting to learn about
-          new technologies and for anyone wanting to learn web
-          development
+          designers looking to network, wanting to learn and who have a passion for innovation
         </p>
         <Link
           to="/about"
@@ -32,9 +30,9 @@ const IndexPage = () => (
           Connect
         </h2>
         <p>
-          Programmers get the stigma they aren’t social, we beg to differ.
-          Pensacola Developers are about connecting individuals in the local
-          tech community.
+          Programmers get the stigma they aren’t social, but we beg to differ.
+          Pensacola Developers is about connecting individuals in the local
+          tech community. We invite everyone to join, and let's discuss your nerdiest thoughts.
         </p>
       </div>
 
@@ -43,8 +41,9 @@ const IndexPage = () => (
           Educate
         </h2>
         <p>
-          Pensacola Developers provides opportunities to learn web technologies
-          and have a little fun while doing it.
+          Pensacola Developers provides opportunities to learn web technologies from your
+          peers and have a little fun while doing it. Whether you're just starting off or
+          retiring from one of the FAANG companies, you're welcome to learn with us.
         </p>
       </div>
 
@@ -53,9 +52,9 @@ const IndexPage = () => (
           Support
         </h2>
         <p>
-          We want to help cultivate a local environment that supports and
-          encourages those learning and continuing to learn web development
-          technologies.
+          We want to help cultivate a safe environment that supports and
+          encourages innovation and learning. Let us know how we can help you. If we can't, chances are
+          we can find someone who can.
         </p>
       </div>
     </section>
