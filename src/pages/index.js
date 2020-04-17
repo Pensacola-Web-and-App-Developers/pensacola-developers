@@ -47,9 +47,9 @@ const IndexPage = () => (
             Connect
           </h2>
           <p className="mt-2 leading-relaxed text-cool-grey-600 max-w-2xl">
-            Programmers get the stigma they aren’t social, we beg to differ.
-            Pensacola Developers are about connecting individuals in the local
-            tech community.
+          Programmers get the stigma they aren’t social, but we beg to differ.
+          Pensacola Developers is about connecting individuals in the local
+          tech community. We invite everyone to discuss your nerdiest thoughts.
           </p>
         </div>
       </div>
@@ -80,8 +80,9 @@ const IndexPage = () => (
             Educate
           </h2>
           <p className="mt-2 leading-relaxed text-cool-grey-600 max-w-2xl">
-            Pensacola Developers provides opportunities to learn web
-            technologies and have a little fun while doing it.
+          Pensacola Developers provides opportunities to learn web technologies from your
+          peers and have a little fun while doing it. Whether you're just starting or
+          retiring from a long career, you're welcome to learn with us.
           </p>
         </div>
       </div>
@@ -112,9 +113,9 @@ const IndexPage = () => (
             Support
           </h2>
           <p className="mt-2 leading-relaxed text-cool-grey-600 max-w-2xl">
-            We want to help cultivate a local environment that supports and
-            encourages those learning and continuing to learn web development
-            technologies.
+          We want to help cultivate a safe environment that supports and
+          encourages innovation and learning. Let us know how we can help you. If we can't, chances are
+          we can find someone who can.
           </p>
         </div>
       </div>
