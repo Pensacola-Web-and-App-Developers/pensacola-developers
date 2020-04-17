@@ -109,6 +109,43 @@ const EventsPage = ({ data }) => (
         </div>
       </div>
 
+      <div className="bg-cool-grey-050 max-w-2xl rounded shadow-md p-8 mt-8">
+        <div className="flex flex-col-reverse sm:flex-row justify-between">
+          <div>
+            <div className="uppercase font-semibold text-light-blue-vivid-500 text-lg pt-4 sm:pt-0">
+              Fri, March 27 @ 6:30 PM
+            </div>
+            <h2 className="font-semibold text-xl py-2">Getting Started with Angular (Part 2)</h2>
+            <a
+              className="font-semibold text-pink-vivid-500 hover:text-pink-vivid-400"
+              href="https://www.twitch.tv/pensacoladevs"
+            >
+              twitch.tv/pensacoladevs/
+            </a>
+          </div>
+          <img
+            className="sm:h-24 rounded"
+            src={firstAngularSite}
+            alt="Getting Started with Angular (Part 2)"
+          />
+        </div>
+        <div>
+          <p className="mt-5">
+          We're doing it! We're really passionate about keeping the Pensacola Developers meetup alive,
+          so we're going to do a remote workshop session via Twitch! Be honest - you have nothing
+          better to do right now on Friday night, so we're giving you an option. Tune in
+          ready to learn on the Pensacola Developer's Twitch Channel at{" "}
+            <a
+              className="font-semibold text-pink-vivid-500 hover:text-pink-vivid-400"
+              href="https://www.twitch.tv/pensacoladevs"
+            >
+              twitch.tv/pensacoladevs/
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+
       <EventCard
         day="Tue"
         date="Mar 10"
