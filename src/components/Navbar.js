@@ -41,7 +41,7 @@ const Navbar = ({ siteTitle }) => {
               onClick={toggle}
               onKeyPress={toggleKeyPress}
               type="button"
-              className="text-cool-grey-500 hover:text-cool-grey-100 focus:text-cool-grey-100 focus:outline-none"
+              className="text-cool-grey-500 hover:text-cool-grey-300 focus:text-cool-grey-300 focus:outline-none"
             >
               <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                 {isOpen ? (
