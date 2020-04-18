@@ -14,7 +14,7 @@ const EventsPage = ({ data }) => (
   <Layout>
     <SEO title="Events" />
 
-    <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
+    <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 pt-10">
       <h1 className="font-bold text-2xl sm:text-4xl mt-10">Events</h1>
       <p className="text-center sm:text-xl py-10">
         Come see what's going on with Pensacola Developers!
