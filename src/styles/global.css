@@ -1,32 +1,38 @@
-.bg-center.bg-cover{
-    display: block;
-    position: relative;
-    background: rgba(43,176,237, 0.78);
-    min-height: 400px;
-  }
+.bg-center.bg-cover {
+  display: block;
+  position: relative;
+  background: rgba(43, 176, 237, 0.78);
+  min-height: 400px;
+}
 
-.bg-center.bg-cover::before{
-    content: "";
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1; 
+.bg-center.bg-cover::before {
+  content: "";
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.icon-link.fill-current,
+.icon-book-open.fill-current,
+.icon-buoy.fill-current {
+  fill: white;
 }
 
 .navbar-logo {
-    width: 160px;
-    height: 38px;
+  width: 160px;
+  height: 38px;
 }
 
-.navbar-logo-link{
-    line-height: 0;
+.navbar-logo-link {
+  line-height: 0;
 }
 
-.welcome-msg{
-    min-height: 400px;
+.welcome-msg {
+  min-height: 400px;
 }
