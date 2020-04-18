@@ -16,10 +16,10 @@ const Navbar = ({ siteTitle }) => {
 
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "pdfull.png" }) {
+      file(relativePath: { eq: "pdfull-revamp.png" }) {
         childImageSharp {
-          fixed {
-            src
+          fixed(width: 160) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -64,12 +64,12 @@ const Navbar = ({ siteTitle }) => {
             isOpen ? "flex flex-col" : "hidden"
           }`}
         >
-        <Link
-          to="/"
-          className="mt-1 sm:mt-0 sm:ml-2 px-3 py-1 sm:py-2 hover:bg-cool-grey-100 focus:bg-cool-grey-100 focus:outline-none rounded-md"
-        >
-          Home
-        </Link>
+          <Link
+            to="/"
+            className="mt-1 sm:mt-0 sm:ml-2 px-3 py-1 sm:py-2 hover:bg-cool-grey-100 focus:bg-cool-grey-100 focus:outline-none rounded-md"
+          >
+            Home
+          </Link>
           <Link
             to="/events"
             className="mt-1 sm:mt-0 sm:ml-2 px-3 py-1 sm:py-2 hover:bg-cool-grey-100 focus:bg-cool-grey-100 focus:outline-none rounded-md"
