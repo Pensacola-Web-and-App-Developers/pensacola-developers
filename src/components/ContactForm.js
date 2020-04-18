@@ -38,7 +38,7 @@ export default class ContactForm extends React.Component {
         className="bg-cool-grey-050 max-w-2xl rounded shadow-md p-8 mt-8"
         name="contact"
         method="post"
-        action="/contact/thanks/"
+        action="/thanks"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={this.handleSubmit}
