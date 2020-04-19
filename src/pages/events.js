@@ -9,14 +9,15 @@ import oddColony from "../images/odd-colony-1.jpg"
 import firstAngularSite from "../images/my-first-angular-site.jpeg"
 import introToReact from "../images/events/intro-to-react.png"
 import virtualHappyHour from "../images/events/virtual-happy-hour.png"
+import basicWeb from "../images/events/wordcloud.png"
 
 const EventsPage = ({ data }) => (
   <Layout>
     <SEO title="Events" />
 
-    <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 pt-10">
+    <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 pt-6">
       <h1 className="font-bold text-2xl sm:text-4xl mt-10">Events</h1>
-      <p className="text-center sm:text-xl py-10">
+      <p className="text-center sm:text-xl py-4">
         Come see what's going on with Pensacola Developers!
       </p>
 
@@ -34,6 +35,46 @@ const EventsPage = ({ data }) => (
     </section>
 
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
+      <div className="bg-cool-grey-050 max-w-2xl rounded shadow-md p-8 mt-8">
+        <div className="flex flex-col-reverse sm:flex-row justify-between">
+          <div>
+            <div className="uppercase font-semibold text-light-blue-vivid-500 text-lg pt-4 sm:pt-0">
+              Wed, Apr 22 @ 6:00 PM
+            </div>
+            <h2 className="font-semibold text-xl py-2">
+              Web Development: Back to the Basics
+            </h2>
+            <a
+              className="font-semibold text-pink-vivid-500 hover:text-pink-vivid-400"
+              href="https://www.twitch.tv/pensacoladevs"
+            >
+              twitch.tv/pensacoladevs/
+            </a>
+          </div>
+          <img
+            className="sm:h-24 rounded"
+            src={basicWeb}
+            alt="Web Development: Back to the Basics"
+          />
+        </div>
+        <div>
+          <p className="mt-5">
+            The web development world can be so overwhelming. Let's ignore all
+            the latest trends and frameworks, and let's go back to the basics.
+            That's right! We're going to go back and explore good ole HTML, CSS,
+            and JavaScript. The workshop will be streamed live on the Pensacola
+            Developer's Twitch Channel at{" "}
+            <a
+              className="font-semibold text-pink-vivid-500 hover:text-pink-vivid-400"
+              href="https://www.twitch.tv/pensacoladevs"
+            >
+              twitch.tv/pensacoladevs/
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+
       <div className="bg-cool-grey-050 max-w-2xl rounded shadow-md p-8 mt-8">
         <div className="flex flex-col-reverse sm:flex-row justify-between">
           <div>
@@ -115,7 +156,9 @@ const EventsPage = ({ data }) => (
             <div className="uppercase font-semibold text-light-blue-vivid-500 text-lg pt-4 sm:pt-0">
               Fri, March 27 @ 6:30 PM
             </div>
-            <h2 className="font-semibold text-xl py-2">Getting Started with Angular (Part 2)</h2>
+            <h2 className="font-semibold text-xl py-2">
+              Getting Started with Angular (Part 2)
+            </h2>
             <a
               className="font-semibold text-pink-vivid-500 hover:text-pink-vivid-400"
               href="https://www.twitch.tv/pensacoladevs"
@@ -131,10 +174,11 @@ const EventsPage = ({ data }) => (
         </div>
         <div>
           <p className="mt-5">
-          We're doing it! We're really passionate about keeping the Pensacola Developers meetup alive,
-          so we're going to do a remote workshop session via Twitch! Be honest - you have nothing
-          better to do right now on Friday night, so we're giving you an option. Tune in
-          ready to learn on the Pensacola Developer's Twitch Channel at{" "}
+            We're doing it! We're really passionate about keeping the Pensacola
+            Developers meetup alive, so we're going to do a remote workshop
+            session via Twitch! Be honest - you have nothing better to do right
+            now on Friday night, so we're giving you an option. Tune in ready to
+            learn on the Pensacola Developer's Twitch Channel at{" "}
             <a
               className="font-semibold text-pink-vivid-500 hover:text-pink-vivid-400"
               href="https://www.twitch.tv/pensacoladevs"
