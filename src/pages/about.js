@@ -9,20 +9,20 @@ import andrew from "../images/bios/photo-1.png"
 const SecondPage = () => (
   <Layout>
     <SEO title="About" />
-    <section className="flex flex-col border-b justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
+    <section className="flex flex-col border-b justify-center items-center lg:max-w-4xl mx-auto px-4 py-6">
       <h1 className="font-bold text-2xl sm:text-4xl mt-10">About Us</h1>
-      <p className="text-center max-w-3xl leading-loose sm:text-xl py-10">
+      <p className="text-center max-w-3xl leading-loose sm:text-xl py-4">
         Pensacola Developers was created to help connect like minded individuals
-        in the technology community. We know that web development is ever changing, and we
-        want to create local education opportunities. We want to encourage veteran and novice
-        developers participate. We strongly believe everyone has something to
-        bring to the table.
+        in the technology community. We know that web development is ever
+        changing, and we want to create local education opportunities. We want
+        to encourage veteran and novice developers participate. We strongly
+        believe everyone has something to bring to the table.
       </p>
     </section>
 
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
       <h2 className="uppercase tracking-wider font-semibold text-light-blue-vivid-500 text-xl">
-      Let's meet the team
+        Let's meet the team
       </h2>
 
       <div className="bg-white max-w-xs sm:max-w-2xl rounded p-8 mt-8">
@@ -51,9 +51,8 @@ const SecondPage = () => (
             >
               Python
             </a>{" "}
-            as the first language he loved! Fast forward years later and
-            he's now a Software Architect for a transportation company working
-            on{" "}
+            as the first language he loved! Fast forward years later and he's
+            now a Software Architect for a transportation company working on{" "}
             <a
               className="text-blue-500 hover:text-blue-700"
               href="https://aws.amazon.com/"

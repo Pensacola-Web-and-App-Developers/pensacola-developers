@@ -8,9 +8,9 @@ const BlogPage = ({ data }) => (
   <Layout>
     <SEO title="Blog" />
 
-    <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
+    <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-6">
       <h1 className="font-bold text-2xl sm:text-4xl mt-10">Blog</h1>
-      <p className="text-center sm:text-xl py-10">
+      <p className="text-center sm:text-xl py-4">
         Read something (like this headline)
       </p>
     </section>

@@ -14,9 +14,9 @@ const EventsPage = ({ data }) => (
   <Layout>
     <SEO title="Events" />
 
-    <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 pt-10">
+    <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 pt-6">
       <h1 className="font-bold text-2xl sm:text-4xl mt-10">Events</h1>
-      <p className="text-center sm:text-xl py-10">
+      <p className="text-center sm:text-xl py-4">
         Come see what's going on with Pensacola Developers!
       </p>
 
@@ -115,7 +115,9 @@ const EventsPage = ({ data }) => (
             <div className="uppercase font-semibold text-light-blue-vivid-500 text-lg pt-4 sm:pt-0">
               Fri, March 27 @ 6:30 PM
             </div>
-            <h2 className="font-semibold text-xl py-2">Getting Started with Angular (Part 2)</h2>
+            <h2 className="font-semibold text-xl py-2">
+              Getting Started with Angular (Part 2)
+            </h2>
             <a
               className="font-semibold text-pink-vivid-500 hover:text-pink-vivid-400"
               href="https://www.twitch.tv/pensacoladevs"
@@ -131,10 +133,11 @@ const EventsPage = ({ data }) => (
         </div>
         <div>
           <p className="mt-5">
-          We're doing it! We're really passionate about keeping the Pensacola Developers meetup alive,
-          so we're going to do a remote workshop session via Twitch! Be honest - you have nothing
-          better to do right now on Friday night, so we're giving you an option. Tune in
-          ready to learn on the Pensacola Developer's Twitch Channel at{" "}
+            We're doing it! We're really passionate about keeping the Pensacola
+            Developers meetup alive, so we're going to do a remote workshop
+            session via Twitch! Be honest - you have nothing better to do right
+            now on Friday night, so we're giving you an option. Tune in ready to
+            learn on the Pensacola Developer's Twitch Channel at{" "}
             <a
               className="font-semibold text-pink-vivid-500 hover:text-pink-vivid-400"
               href="https://www.twitch.tv/pensacoladevs"
