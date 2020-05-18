@@ -34,6 +34,21 @@ const EventsPage = ({ data }) => (
       </div>
     </section>
 
+    <div>{data.allMarkdownRemark.totalCount} Events</div>
+
+    {data.allMarkdownRemark.edges.map(({ node }) => (
+     <EventCard
+      day={node.frontmatter.day} 
+      date={node.frontmatter.date}
+      time={node.frontmatter.time}
+      title={node.frontmatter.title}
+      url={node.frontmatter.url}
+      location={node.frontmatter.location}
+      description={node.frontmatter.description}
+     />
+   
+    ))}
+
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
       <div className="bg-cool-grey-050 max-w-2xl rounded shadow-md p-8 mt-8">
         <div className="flex flex-col-reverse sm:flex-row justify-between">
@@ -234,20 +249,42 @@ const EventsPage = ({ data }) => (
 export default EventsPage
 
 export const query = graphql`
-  query {
-    allMeetupEvent {
+  query EventsQuery {
+    allMarkdownRemark {
+      totalCount
       edges {
         node {
-          id
-          name
-          local_date
-          local_time
-          description
-          venue {
-            name
+          fields {
+            slug
+          }
+          frontmatter {
+            day
+            date
+            time
+            title
+            location
+            url
+            photo
+            description
           }
         }
       }
     }
   }
 `
+
+//   allMeetupEvent {
+//     edges {
+//       node {
+//         id
+//         name
+//         local_date
+//         local_time
+//         description
+//         venue {
+//           name
+//         }
+//       }
+//     }
+//   }
+// }
