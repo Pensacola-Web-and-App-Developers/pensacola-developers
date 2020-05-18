@@ -3,7 +3,7 @@
 @tailwind components;
 
 .markdown {
-  @apply text-cool-grey-100 leading-relaxed;
+  @apply font-semibold text-cool-grey-800 leading-relaxed;
 }
 
 .markdown p + p {

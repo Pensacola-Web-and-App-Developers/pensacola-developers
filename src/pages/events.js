@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -34,22 +35,25 @@ const EventsPage = ({ data }) => (
       </div>
     </section>
 
-    <div>{data.allMarkdownRemark.totalCount} Events</div>
-
-    {data.allMarkdownRemark.edges.map(({ node }) => (
-     <EventCard
-      day={node.frontmatter.day} 
-      date={node.frontmatter.date}
-      time={node.frontmatter.time}
-      title={node.frontmatter.title}
-      url={node.frontmatter.url}
-      location={node.frontmatter.location}
-      description={node.frontmatter.description}
-     />
-   
-    ))}
-
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <EventCard
+          day={node.frontmatter.day}
+          date={node.frontmatter.date}
+          time={node.frontmatter.time}
+          title={node.frontmatter.title}
+          url={node.frontmatter.url}
+          location={node.frontmatter.location}
+          description={node.frontmatter.description}
+          slug={node.fields.slug}
+        >
+          <Img
+            className="rounded-md"
+            fixed={node.frontmatter.featuredImage.childImageSharp.fixed}
+          />
+        </EventCard>
+      ))}
+
       <div className="bg-cool-grey-050 max-w-2xl rounded shadow-md p-8 mt-8">
         <div className="flex flex-col-reverse sm:flex-row justify-between">
           <div>
@@ -264,7 +268,13 @@ export const query = graphql`
             title
             location
             url
-            photo
+            featuredImage {
+              childImageSharp {
+                fixed(width: 180, height: 100) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
             description
           }
         }
