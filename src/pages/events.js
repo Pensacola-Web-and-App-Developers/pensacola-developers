@@ -38,18 +38,13 @@ const EventsPage = ({ data }) => (
     <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <EventCard
-          day={node.frontmatter.day}
-          date={node.frontmatter.date}
-          time={node.frontmatter.time}
           title={node.frontmatter.title}
-          url={node.frontmatter.url}
-          location={node.frontmatter.location}
           description={node.frontmatter.description}
           slug={node.fields.slug}
         >
           <Img
-            className="rounded-md"
-            fixed={node.frontmatter.featuredImage.childImageSharp.fixed}
+            className="rounded-t-md"
+            fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
           />
         </EventCard>
       ))}
@@ -229,24 +224,6 @@ const EventsPage = ({ data }) => (
         description="Come hang out and talk shop! Veteran and newbie coders feel free to come talk projects, share resources, and cut loose!"
       />
     </section>
-
-    {/* <section className="text-cool-grey-050 mx-auto">
-      {data.allMeetupEvent.edges.map(({ node }) => (
-        <div
-          className="bg-cool-grey-050 max-w-2xl rounded px-10 py-12 mt-5"
-          key={node.id}
-        >
-          <div>
-            <div>
-              {node.local_date} @ {node.local_time}
-            </div>
-            <h3>{node.name}</h3>
-            <div>{node.venue.name}</div>
-          </div>
-          <div dangerouslySetInnerHTML={{ __html: node.description }} />
-        </div>
-      ))}
-    </section> */}
   </Layout>
 )
 
@@ -254,7 +231,7 @@ export default EventsPage
 
 export const query = graphql`
   query EventsQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
@@ -262,16 +239,11 @@ export const query = graphql`
             slug
           }
           frontmatter {
-            day
-            date
-            time
             title
-            location
-            url
             featuredImage {
               childImageSharp {
-                fixed(width: 180, height: 100) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 850) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -282,19 +254,3 @@ export const query = graphql`
     }
   }
 `
-
-//   allMeetupEvent {
-//     edges {
-//       node {
-//         id
-//         name
-//         local_date
-//         local_time
-//         description
-//         venue {
-//           name
-//         }
-//       }
-//     }
-//   }
-// }

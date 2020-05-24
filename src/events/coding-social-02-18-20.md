@@ -1,6 +1,5 @@
 ---
-day: "Tue"
-date: "May 19"
+date: "2020-05-19"
 time: "6:00 PM"
 title: "Virtual Happy Hour"
 location: "Zoom"
