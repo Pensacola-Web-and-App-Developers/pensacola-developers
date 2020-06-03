@@ -213,16 +213,6 @@ const EventsPage = ({ data }) => (
         photo={firstAngularSite}
         description="It's finally here! Our first workshop is going to take place at cowork@annex on Palafox. Based on some feedback we received, we deviated a little from the original plan. We're going to jump in to development with Angular and show you how to build your first custom site using this all inclusive platform. Check back for details on what you need as a pre-setup for the workshop!"
       />
-
-      <EventCard
-        day="Tue"
-        date="Feb 18"
-        time="6:00 PM"
-        title="Coding Social"
-        location="Odd Colony Brewing Company"
-        photo={oddColony}
-        description="Come hang out and talk shop! Veteran and newbie coders feel free to come talk projects, share resources, and cut loose!"
-      />
     </section>
   </Layout>
 )
