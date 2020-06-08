@@ -1,7 +1,7 @@
 ---
 date: "2020-05-19"
 time: "6:00 PM"
-title: "Virtual Happy Hour"
+title: "May Coding Social"
 location: "Zoom"
 url: "https://us02web.zoom.us/j/8680740006?pwd=c3ZWSWNLcFcwWm9JVVZKbkJQVU9mdz09"
 featuredImage: ../images/events/happy-hour-05-18-20.png
