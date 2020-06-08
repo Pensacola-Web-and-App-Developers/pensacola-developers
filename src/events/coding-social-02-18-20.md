@@ -1,19 +1,11 @@
 ---
-date: "2020-05-19"
+date: "2020-02-18"
 time: "6:00 PM"
-title: "Virtual Happy Hour"
-location: "Zoom"
-url: "https://us02web.zoom.us/j/8680740006?pwd=c3ZWSWNLcFcwWm9JVVZKbkJQVU9mdz09"
-featuredImage: ../images/events/happy-hour-05-18-20.png
-description: "Pensacola Developers is inviting you to a Virtual Social Happy Hour! Join us on Zoom to hang out!"
+title: "Febuary Coding Social"
+location: "Odd Colony Brewing Company"
+url: "https://www.oddcolony.com/"
+featuredImage: ../images/events/odd-colony-1.jpg
+description: "Come hang out and talk shop! Veteran and newbie coders feel free to come talk projects, share resources, and cut loose!"
 ---
 
-Pensacola Developers is inviting you to a Virtual Social Happy Hour!
-
-Topic: Pensacola Developers' Virtual Social Happy Hour!  
-Time: May 19, 2020 06:00 PM Central Time (US and Canada)
-
-Join [Zoom Meeting](https://us02web.zoom.us/j/8680740006?pwd=c3ZWSWNLcFcwWm9JVVZKbkJQVU9mdz09)
-
-Meeting ID: 868 074 0006
-Password: 8aFKBi
+Come hang out and talk shop! Veteran and newbie coders feel free to come talk projects, share resources, and cut loose!
