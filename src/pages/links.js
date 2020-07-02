@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const LinksPage = () => (
   <section>
-    <SEO title="Contact" />
+    <SEO title="Links" />
     <section
       className="bg-cool-grey-050 flex flex-col h-screen justify-center items-center mx-auto px-4 pt-6"
       style={{
