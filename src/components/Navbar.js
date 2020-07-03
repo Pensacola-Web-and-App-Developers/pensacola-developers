@@ -77,12 +77,6 @@ const Navbar = ({ siteTitle }) => {
             Events
           </Link>
           <Link
-            to="/blog"
-            className="mt-1 sm:mt-0 sm:ml-2 px-3 py-1 sm:py-2 hover:bg-cool-grey-100 focus:bg-cool-grey-100 focus:outline-none rounded-md"
-          >
-            Blog
-          </Link>
-          <Link
             to="/about"
             className="mt-1 sm:mt-0 sm:ml-2 px-3 py-1 sm:py-2 hover:bg-cool-grey-100 focus:bg-cool-grey-100 focus:outline-none rounded-md"
           >
