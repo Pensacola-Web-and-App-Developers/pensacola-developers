@@ -1,17 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const EventCard = ({
-  children,
-  title,
-  description,
-  slug,
-}) => (
+const EventCard = ({ children, date, time, title, description, slug }) => (
   <div className="bg-cool-grey-050 font-semibold max-w-2xl rounded shadow-md mt-8">
     <Link to={slug}>{children}</Link>
     <div className=" flex flex-col-reverse sm:flex-row justify-between">
       <div className="p-8">
         <h2 className="text-xl">{title}</h2>
+        <div className="uppercase font-semibold text-light-blue-vivid-500 text-lg mt-3">
+          {date} @ {time}
+        </div>
         <div>
           <p className="my-3 text-cool-grey-800">{description}</p>
         </div>
