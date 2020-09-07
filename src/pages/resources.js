@@ -8,6 +8,11 @@ import webdocs from "../images/resources/webdocs.png"
 import csslogo from "../images/resources/css.jpg"
 
 const ResourcesPage = () => {
+  const style = {
+    width: "100% !important",
+    height: "220px",
+    border: "1px #ccc solid !important",
+  }
   return (
     <Layout>
       <SEO title="Events" />
@@ -17,7 +22,6 @@ const ResourcesPage = () => {
           Keep your brain fresh with some of this knowledge.
         </p>
       </section>
-
       <section className="flex flex-wrap justify-center items-center mx-auto px-4 py-4 resource-wrapper">
         <div
           className="bg-cool-grey-050 max-w-sm rounded shadow-md p-8 m-2 w-full sm:w-1/3 sm:min-h-0 cursor-pointer flex flex-col items-center"
@@ -68,6 +72,12 @@ const ResourcesPage = () => {
           </p>
         </div>
       </section>
+      <br></br>
+      <iframe
+        scrolling="no"
+        style={style}
+        src="https://buttondown.email/pensacoladevs?as_embed=true"
+      ></iframe>
     </Layout>
   )
 }

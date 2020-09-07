@@ -14,26 +14,22 @@ const EventsPage = ({ data }) => (
   <Layout>
     <SEO title="Events" />
 
-    <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 pt-6">
+    <section className="flex flex-col justify-center border-b items-center lg:max-w-4xl mx-auto px-4 pt-6">
       <h1 className="font-bold text-2xl sm:text-4xl mt-10">Events</h1>
       <p className="text-center sm:text-xl py-4">
-        Come see what's going on with Pensacola Developers!
-      </p>
-
-      <div className="bg-pink-vivid-050 border-2 border-pink-vivid-500 max-w-lg p-8 rounded">
-        If you are new to joining any of Pensacola Developer's workshops, check
-        out our{" "}
+        Come see what's going on with Pensacola Developers!<br></br>Check out
+        our{" "}
         <Link
           className="text-pink-vivid-500 font-semibold hover:text-pink-vivid-700 focus:text-pink-vivid-700 outline-none"
           to="/workshop-setup"
         >
           Workshop Setup
-        </Link>{" "}
-        so you have everything ready when you join in.
-      </div>
+        </Link>
+        , so you have everything ready when you join in.
+      </p>
     </section>
 
-    <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-10">
+    <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 py-6">
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <EventCard
           date={node.frontmatter.date}

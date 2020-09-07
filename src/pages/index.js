@@ -16,7 +16,7 @@ const IndexPage = () => (
         </p>
         <Link
           to="/about"
-          className="font-semibold bg-light-blue-vivid-500 hover:bg-light-blue-vivid-700 rounded px-4 py-2"
+          className="bg-pink-vivid-400 mt-3 rounded text-cool-grey-050 px-4 py-2 active:bg-pink-vivid-300 focus:bg-pink-vivid-300 hover:bg-pink-vivid-300"
         >
           Learn More
         </Link>
