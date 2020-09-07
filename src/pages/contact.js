@@ -6,7 +6,6 @@ import ContactForm from "../components/ContactForm"
 
 const BlogPage = () => {
   const style = {
-    width: "100% !important",
     height: "420px",
     border: "1px #ccc solid !important",
   }
@@ -20,9 +19,10 @@ const BlogPage = () => {
         </p>
       </section>
 
-      <section className="flex flex-col justify-center items-center lg:max-w-4xl mx-auto px-4 pb-8 pt-8">
+      <section className="flex flex-col justify-center items-center min-w-full mx-auto px-4 pb-8 pt-8">
         {/* <ContactForm /> */}
         <iframe
+          className="max-w-xl w-full"
           src="https://discord.com/widget?id=701045647305998356&theme=dark"
           style={style}
           allowtransparency="true"
